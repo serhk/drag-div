@@ -1,0 +1,20 @@
+﻿<html>
+<head>
+<title>Drag Div Demo</title>
+<style>
+.wrapper-div {padding: 1rem; border: 3px solid black; overflow: auto;}
+.draggable-div {padding: 2rem 1rem; border: 3px solid green; background-color: #ccc; width: 200%; cursor: move;}
+</style>
+</head>
+<body>
+	<div id="js-div" class="wrapper-div">
+		<div class="draggable-div">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula neque quis placerat accumsan. Integer at rhoncus turpis. Pellentesque vel dolor non tellus tempus faucibus. Suspendisse tincidunt est ac aliquam ornare. Aenean nec augue lacus. Proin mattis pharetra nulla, a vehicula erat imperdiet et. Curabitur luctus tincidunt ultricies. Cras laoreet nisi ut bibendum vestibulum.</div>
+	</div>
+	<script src="../dist/drag-div.js"></script>
+	<script>
+	window.addEventListener('DOMContentLoaded', function(){
+		dragDiv.makeEvents(document.getElementById('js-div'));
+	});
+	</script>
+</body>
+</html>
